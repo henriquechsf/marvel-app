@@ -12,6 +12,10 @@
         <entry key="..\:/MeusCursos/MeusCursosUdemy/Android/Marvel/starter/MarvelAppStarter/app/src/main/res/layout/fragment_search_character.xml" value="0.36666666666666664" />
         <entry key="..\:/MeusCursos/MeusCursosUdemy/Android/Marvel/starter/MarvelAppStarter/app/src/main/res/layout/item_character.xml" value="0.36666666666666664" />
         <entry key="..\:/MeusCursos/MeusCursosUdemy/Android/Marvel/starter/MarvelAppStarter/app/src/main/res/menu/menu_nav.xml" value="0.36666666666666664" />
+        <entry key="app/src/main/res/layout/fragment_favorite_character.xml" value="0.12777777777777777" />
+        <entry key="app/src/main/res/layout/fragment_list_character.xml" value="0.12777777777777777" />
+        <entry key="app/src/main/res/layout/item_character.xml" value="0.12777777777777777" />
+        <entry key="app/src/main/res/layout/item_comic.xml" value="0.12777777777777777" />
       </map>
     </option>
   </component>
