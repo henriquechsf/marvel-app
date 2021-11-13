@@ -7,6 +7,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import dagger.hilt.android.AndroidEntryPoint
 import daniel.lop.io.marvelappstarter.R
 import daniel.lop.io.marvelappstarter.data.model.character.CharacterModel
@@ -38,6 +39,20 @@ class DetailsCharacterFragment : BaseFragment<FragmentDetailsCharacterBinding, D
         setupRecyclerView()
         onLoadedCharacter(characterModel)
         collectObserver()
+
+        binding.tvDescriptionCharacterDetails.setOnClickListener {
+            onShowDialog(characterModel)
+        }
+    }
+
+    private fun onShowDialog(characterModel: CharacterModel) {
+        MaterialAlertDialogBuilder(requireContext())
+            .setTitle(characterModel.name)
+            .setMessage(characterModel.description)
+            .setNegativeButton(getString(R.string.close_dialog)) { dialog, _ ->
+                dialog.dismiss()
+            }
+            .show()
     }
 
     private fun collectObserver() = lifecycleScope.launch {
